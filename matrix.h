@@ -151,7 +151,7 @@ public:
             }
     };
 
-    T operator()(unsigned filas, unsigned columnas){
+    T operator()(int filas, int columnas){
         if(filas >= rows || columnas >= columns ){
             throw out_of_range("Índices muy grandes");
         }else{
@@ -176,7 +176,7 @@ public:
         return Matriz2;
     };
 
-    Matrix<T> operator*(Matrix<T> other) const{
+    Matrix<T> operator*(Matrix<T> other) {
         Matrix<T> Matriz2(rows,other.columns);
         if(other.rows != columns )
             throw out_of_range("Programa incapaz de multiplicar matrices de diferentes dimensiones uwu");
@@ -184,8 +184,8 @@ public:
             for(int i=0; i<rows; i++) {
                 for (int k = 0; k < other.columns; k++) {
                     T cont = 0;
-                    for (int k = 0; k < columns; k++)
-                        cont += operator()(i, k) * other.operator()(k, k);
+                    for (int q = 0; q < columns; q++)
+                        cont += operator()(i, q) * other.operator()(q, k);
                     Matriz2.set(i,k,cont);
                 }
             }

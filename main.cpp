@@ -16,6 +16,7 @@ int main() {
     matrix2->set(6,9,4);
     matrix2->set(8,1,4);
 
+
     auto matrix3 = *matrix2*(*matrix);
 
 
