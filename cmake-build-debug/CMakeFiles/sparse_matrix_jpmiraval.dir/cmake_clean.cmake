@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sparse_matrix_jpmiraval.dir/main.cpp.obj"
-  "CMakeFiles/sparse_matrix_jpmiraval.dir/mocker/mocker.cpp.obj"
-  "CMakeFiles/sparse_matrix_jpmiraval.dir/tester/tester.cpp.obj"
   "libsparse_matrix_jpmiraval.dll.a"
   "sparse_matrix_jpmiraval.exe"
   "sparse_matrix_jpmiraval.exe.manifest"

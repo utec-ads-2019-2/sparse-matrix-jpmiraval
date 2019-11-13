@@ -73,12 +73,12 @@ preinstall:
 CMakeFiles/sparse_matrix_jpmiraval.dir/all:
 	$(MAKE) -f CMakeFiles\sparse_matrix_jpmiraval.dir\build.make CMakeFiles/sparse_matrix_jpmiraval.dir/depend
 	$(MAKE) -f CMakeFiles\sparse_matrix_jpmiraval.dir\build.make CMakeFiles/sparse_matrix_jpmiraval.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\HP\Documents\sparse-matrix-jpmiraval\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target sparse_matrix_jpmiraval"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\HP\Documents\sparse-matrix-jpmiraval\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target sparse_matrix_jpmiraval"
 .PHONY : CMakeFiles/sparse_matrix_jpmiraval.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sparse_matrix_jpmiraval.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\sparse-matrix-jpmiraval\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\sparse-matrix-jpmiraval\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/sparse_matrix_jpmiraval.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\sparse-matrix-jpmiraval\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/sparse_matrix_jpmiraval.dir/rule

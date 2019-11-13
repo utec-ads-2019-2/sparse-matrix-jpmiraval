@@ -92,19 +92,7 @@
 		<Unit filename="C:/Users/HP/Documents/sparse-matrix-jpmiraval/matrix.h">
 			<Option target="sparse_matrix_jpmiraval"/>
 		</Unit>
-		<Unit filename="C:/Users/HP/Documents/sparse-matrix-jpmiraval/mocker/mocker.cpp">
-			<Option target="sparse_matrix_jpmiraval"/>
-		</Unit>
-		<Unit filename="C:/Users/HP/Documents/sparse-matrix-jpmiraval/mocker/mocker.h">
-			<Option target="sparse_matrix_jpmiraval"/>
-		</Unit>
 		<Unit filename="C:/Users/HP/Documents/sparse-matrix-jpmiraval/node.h">
-			<Option target="sparse_matrix_jpmiraval"/>
-		</Unit>
-		<Unit filename="C:/Users/HP/Documents/sparse-matrix-jpmiraval/tester/tester.cpp">
-			<Option target="sparse_matrix_jpmiraval"/>
-		</Unit>
-		<Unit filename="C:/Users/HP/Documents/sparse-matrix-jpmiraval/tester/tester.h">
 			<Option target="sparse_matrix_jpmiraval"/>
 		</Unit>
 		<Unit filename="C:/Users/HP/Documents/sparse-matrix-jpmiraval/CMakeLists.txt">

@@ -8,10 +8,6 @@ include_directories(mocker)
 include_directories(tester)
 
 add_executable(sparse_matrix_jpmiraval
-        mocker/mocker.cpp
-        mocker/mocker.h
-        tester/tester.cpp
-        tester/tester.h
         main.cpp
         matrix.h
         node.h)

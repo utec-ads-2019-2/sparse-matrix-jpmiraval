@@ -6,53 +6,23 @@
 
 #IncludeRegexTransform: 
 
-../matrix.h
-stdexcept
+C:/Users/HP/Documents/sparse-matrix-jpmiraval/main.cpp
+iostream
 -
-iomanip
--
-node.h
-../node.h
-map
-../map
-
-../node.h
+matrix.h
+C:/Users/HP/Documents/sparse-matrix-jpmiraval/matrix.h
 
 C:/Users/HP/Documents/sparse-matrix-jpmiraval/matrix.h
 stdexcept
 -
 iomanip
+-
+vector
 -
 node.h
 C:/Users/HP/Documents/sparse-matrix-jpmiraval/node.h
 map
 C:/Users/HP/Documents/sparse-matrix-jpmiraval/map
 
-C:/Users/HP/Documents/sparse-matrix-jpmiraval/mocker/mocker.h
-random
--
-type_traits
--
-
-C:/Users/HP/Documents/sparse-matrix-jpmiraval/tester/tester.cpp
-tester.h
-C:/Users/HP/Documents/sparse-matrix-jpmiraval/tester/tester.h
-matrix.h
-C:/Users/HP/Documents/sparse-matrix-jpmiraval/tester/matrix.h
-
-C:/Users/HP/Documents/sparse-matrix-jpmiraval/tester/tester.h
-stdexcept
--
-iostream
--
-assert.h
--
-vector
--
-algorithm
--
-../mocker/mocker.h
-C:/Users/HP/Documents/sparse-matrix-jpmiraval/mocker/mocker.h
-../matrix.h
-C:/Users/HP/Documents/sparse-matrix-jpmiraval/matrix.h
+C:/Users/HP/Documents/sparse-matrix-jpmiraval/node.h
 

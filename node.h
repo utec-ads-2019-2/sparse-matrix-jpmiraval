@@ -13,7 +13,10 @@ protected:
 
 public:
     explicit Node(){};
-    Node(T i , int posX, int posY): data(i), posX(posX), posY(posY){};
+    Node(T i , int posX, int posY): data(i), posX(posX), posY(posY){
+        next = nullptr;
+        down = nullptr;
+    };
 
     friend class Matrix<T>;
 };
@@ -27,6 +30,7 @@ protected:
 public:
     NodeCabecera(int indice){
         pos = indice;
+        next = nullptr; down = nullptr;
     };
 
     friend class Matrix<T>;

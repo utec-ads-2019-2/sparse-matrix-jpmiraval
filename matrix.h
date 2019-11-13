@@ -3,6 +3,7 @@
 
 #include <stdexcept>
 #include <iomanip>
+#include <vector>
 #include "node.h"
 #include "map"
 
@@ -17,15 +18,19 @@ private:
 
     Node<T>* Encontrar(int filas, int columnas){
         NodeCabecera<T>* temporal = x[filas];
-        if(temporal->down){
+        if(temporal->down) {
             auto temp = temporal->down;
-            do{
-                if(temp->posY == columnas){
-                    return temp;
-                }
-                temp = temp->down;
-            }while(temp->posY <= columnas && temp!=nullptr);
-            return 0;
+            if(temp){
+                do{
+                    if(temp->posY == columnas){
+                        return temp;
+                    }
+                    temp = temp->down;
+                }while(temp->posY <= columnas);
+                return nullptr;
+            }
+            return nullptr;
+
         }
         return nullptr;
     }
@@ -98,12 +103,9 @@ public:
     };
 
     void set(unsigned filas, unsigned columnas, T data){
-
         if(filas < rows && columnas < columns){
             Node<T>* newNode = new Node<T>(data, filas, columnas);
-
             auto nodito = Encontrar(filas, columnas);
-
             if(nodito){
                 nodito->data = data;
             }else{
@@ -232,6 +234,7 @@ public:
     void print() {
         for(auto i=0;i<rows;i++){
             for(auto y=0;y<columns;y++)
+                if(this->operator()(i,y))
                 cout<<this->operator()(i,y)<<" ";
             cout<<endl;
         }

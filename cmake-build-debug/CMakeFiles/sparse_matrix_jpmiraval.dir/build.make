@@ -56,38 +56,10 @@ include CMakeFiles/sparse_matrix_jpmiraval.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/sparse_matrix_jpmiraval.dir/flags.make
 
-CMakeFiles/sparse_matrix_jpmiraval.dir/mocker/mocker.cpp.obj: CMakeFiles/sparse_matrix_jpmiraval.dir/flags.make
-CMakeFiles/sparse_matrix_jpmiraval.dir/mocker/mocker.cpp.obj: CMakeFiles/sparse_matrix_jpmiraval.dir/includes_CXX.rsp
-CMakeFiles/sparse_matrix_jpmiraval.dir/mocker/mocker.cpp.obj: ../mocker/mocker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HP\Documents\sparse-matrix-jpmiraval\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sparse_matrix_jpmiraval.dir/mocker/mocker.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sparse_matrix_jpmiraval.dir\mocker\mocker.cpp.obj -c C:\Users\HP\Documents\sparse-matrix-jpmiraval\mocker\mocker.cpp
-
-CMakeFiles/sparse_matrix_jpmiraval.dir/mocker/mocker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sparse_matrix_jpmiraval.dir/mocker/mocker.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\sparse-matrix-jpmiraval\mocker\mocker.cpp > CMakeFiles\sparse_matrix_jpmiraval.dir\mocker\mocker.cpp.i
-
-CMakeFiles/sparse_matrix_jpmiraval.dir/mocker/mocker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sparse_matrix_jpmiraval.dir/mocker/mocker.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\sparse-matrix-jpmiraval\mocker\mocker.cpp -o CMakeFiles\sparse_matrix_jpmiraval.dir\mocker\mocker.cpp.s
-
-CMakeFiles/sparse_matrix_jpmiraval.dir/tester/tester.cpp.obj: CMakeFiles/sparse_matrix_jpmiraval.dir/flags.make
-CMakeFiles/sparse_matrix_jpmiraval.dir/tester/tester.cpp.obj: CMakeFiles/sparse_matrix_jpmiraval.dir/includes_CXX.rsp
-CMakeFiles/sparse_matrix_jpmiraval.dir/tester/tester.cpp.obj: ../tester/tester.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HP\Documents\sparse-matrix-jpmiraval\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sparse_matrix_jpmiraval.dir/tester/tester.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sparse_matrix_jpmiraval.dir\tester\tester.cpp.obj -c C:\Users\HP\Documents\sparse-matrix-jpmiraval\tester\tester.cpp
-
-CMakeFiles/sparse_matrix_jpmiraval.dir/tester/tester.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sparse_matrix_jpmiraval.dir/tester/tester.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\sparse-matrix-jpmiraval\tester\tester.cpp > CMakeFiles\sparse_matrix_jpmiraval.dir\tester\tester.cpp.i
-
-CMakeFiles/sparse_matrix_jpmiraval.dir/tester/tester.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sparse_matrix_jpmiraval.dir/tester/tester.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\sparse-matrix-jpmiraval\tester\tester.cpp -o CMakeFiles\sparse_matrix_jpmiraval.dir\tester\tester.cpp.s
-
 CMakeFiles/sparse_matrix_jpmiraval.dir/main.cpp.obj: CMakeFiles/sparse_matrix_jpmiraval.dir/flags.make
 CMakeFiles/sparse_matrix_jpmiraval.dir/main.cpp.obj: CMakeFiles/sparse_matrix_jpmiraval.dir/includes_CXX.rsp
 CMakeFiles/sparse_matrix_jpmiraval.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HP\Documents\sparse-matrix-jpmiraval\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sparse_matrix_jpmiraval.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HP\Documents\sparse-matrix-jpmiraval\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sparse_matrix_jpmiraval.dir/main.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sparse_matrix_jpmiraval.dir\main.cpp.obj -c C:\Users\HP\Documents\sparse-matrix-jpmiraval\main.cpp
 
 CMakeFiles/sparse_matrix_jpmiraval.dir/main.cpp.i: cmake_force
@@ -100,21 +72,17 @@ CMakeFiles/sparse_matrix_jpmiraval.dir/main.cpp.s: cmake_force
 
 # Object files for target sparse_matrix_jpmiraval
 sparse_matrix_jpmiraval_OBJECTS = \
-"CMakeFiles/sparse_matrix_jpmiraval.dir/mocker/mocker.cpp.obj" \
-"CMakeFiles/sparse_matrix_jpmiraval.dir/tester/tester.cpp.obj" \
 "CMakeFiles/sparse_matrix_jpmiraval.dir/main.cpp.obj"
 
 # External object files for target sparse_matrix_jpmiraval
 sparse_matrix_jpmiraval_EXTERNAL_OBJECTS =
 
-sparse_matrix_jpmiraval.exe: CMakeFiles/sparse_matrix_jpmiraval.dir/mocker/mocker.cpp.obj
-sparse_matrix_jpmiraval.exe: CMakeFiles/sparse_matrix_jpmiraval.dir/tester/tester.cpp.obj
 sparse_matrix_jpmiraval.exe: CMakeFiles/sparse_matrix_jpmiraval.dir/main.cpp.obj
 sparse_matrix_jpmiraval.exe: CMakeFiles/sparse_matrix_jpmiraval.dir/build.make
 sparse_matrix_jpmiraval.exe: CMakeFiles/sparse_matrix_jpmiraval.dir/linklibs.rsp
 sparse_matrix_jpmiraval.exe: CMakeFiles/sparse_matrix_jpmiraval.dir/objects1.rsp
 sparse_matrix_jpmiraval.exe: CMakeFiles/sparse_matrix_jpmiraval.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\HP\Documents\sparse-matrix-jpmiraval\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable sparse_matrix_jpmiraval.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\HP\Documents\sparse-matrix-jpmiraval\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sparse_matrix_jpmiraval.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\sparse_matrix_jpmiraval.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
