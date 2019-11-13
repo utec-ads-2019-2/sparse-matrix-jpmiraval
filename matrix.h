@@ -11,12 +11,12 @@ using namespace std;
 template <typename T>
 class Matrix {
 private:
-    vector<NodeCabecera<T>> *x;
-    vector<NodeCabecera<T>> *y;
+    vector<NodeCabecera<T>*> x;
+    vector<NodeCabecera<T>*> y;
     unsigned rows, columns;
 
     Node<T>* Encontrar(int filas, int columnas){
-        NodeCabecera<T>* temporal = x->at(filas);
+        NodeCabecera<T>* temporal = x[filas];
         if(temporal->down){
             auto temp = temporal->down;
             do{
@@ -25,13 +25,14 @@ private:
                 }
                 temp = temp->down;
             }while(temp->posY <= columnas && temp!=nullptr);
-            return nullptr;
+            return 0;
         }
         return nullptr;
     }
 
     Node<T>* FindAntesdeFilas(int filas, int columnas){
         NodeCabecera<T>* Cabecera = y[columnas];
+
         Node<T>* iterador = new Node<T>;
         if(Cabecera->next == nullptr){
             return nullptr;
@@ -89,10 +90,10 @@ private:
 public:
     Matrix(unsigned rows, unsigned columns):rows(rows), columns(columns){
         for(int i = 0; i < rows; i++){
-            x->push_back(NodeCabecera<T>(i));
+            x.push_back(new NodeCabecera<T>(i));
         }
         for(int i = 0; i < columns; i++){
-            y->push_back(NodeCabecera<T>(i));
+            y.push_back(new NodeCabecera<T>(i));
         }
     };
 
@@ -148,11 +149,11 @@ public:
             }
     };
 
-    T operator()(unsigned filas, unsigned columnas) const {
+    T operator()(unsigned filas, unsigned columnas){
         if(filas >= rows || columnas >= columns ){
             throw out_of_range("Índices muy grandes");
         }else{
-            Node<T>* temp = Encontrar(filas, columnas);
+           Node<T>* temp = Encontrar(filas, columnas);
             if(temp != nullptr)
                 return temp->data;
             else
@@ -161,7 +162,7 @@ public:
 
     }
 
-    Matrix<T> operator*(T scalar) const{
+    Matrix<T> operator*(T scalar) {
         Matrix<T> Matriz2(rows,columns);
         for (int i = 0; i < rows; ++i) {
             for (int j = 0; j < columns; ++j) {
@@ -190,7 +191,7 @@ public:
         }
     };
 
-    Matrix<T> operator+(Matrix<T> other) const{
+    Matrix<T> operator+(Matrix<T> other) {
         if (rows != other.rows || columns != other.columns)
             throw out_of_range("Programa incapaz de sumar matrices de diferentes dimensiones uwu");
         Matrix<T> Matriz2(rows,columns);
@@ -204,7 +205,7 @@ public:
         return Matriz2;
         }
 
-    Matrix<T> operator-(Matrix<T> other) const{
+    Matrix<T> operator-(Matrix<T> other){
         if (rows != other.rows || columns != other.columns)
             throw out_of_range("Programa incapaz de restar matrices de diferentes dimensiones uwu");
         Matrix<T> Matriz2(rows,columns);
@@ -218,7 +219,7 @@ public:
         return Matriz2;
     }
 
-    Matrix<T> transpose() const{
+    Matrix<T> transpose() {
         Matrix<T> Matriz2(columns,rows);
         for(auto i=0;i<rows;i++){
             for(auto y=0;y<columns;y++){
@@ -228,7 +229,7 @@ public:
         return Matriz2;
     };
 
-    void print() const{
+    void print() {
         for(auto i=0;i<rows;i++){
             for(auto y=0;y<columns;y++)
                 cout<<this->operator()(i,y)<<" ";

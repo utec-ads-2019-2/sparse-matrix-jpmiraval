@@ -11,8 +11,9 @@ CMakeFiles/sparse_matrix_jpmiraval.dir/mocker/mocker.cpp.obj
  C:/Users/HP/Documents/sparse-matrix-jpmiraval/mocker/mocker.cpp
  C:/Users/HP/Documents/sparse-matrix-jpmiraval/mocker/mocker.h
 CMakeFiles/sparse_matrix_jpmiraval.dir/tester/tester.cpp.obj
+ ../matrix.h
+ ../node.h
  C:/Users/HP/Documents/sparse-matrix-jpmiraval/matrix.h
  C:/Users/HP/Documents/sparse-matrix-jpmiraval/mocker/mocker.h
- C:/Users/HP/Documents/sparse-matrix-jpmiraval/node.h
  C:/Users/HP/Documents/sparse-matrix-jpmiraval/tester/tester.cpp
  C:/Users/HP/Documents/sparse-matrix-jpmiraval/tester/tester.h
