@@ -7,10 +7,27 @@ class Matrix;
 template <typename T>
 class Node {
 protected:
+    T data;
+    int posX, posY;
     Node<T> *next, *down;
 
 public:
-    explicit Node();
+    explicit Node(){};
+    Node(T i , int posX, int posY): data(i), posX(posX), posY(posY){};
+
+    friend class Matrix<T>;
+};
+
+template <typename T>
+class NodeCabecera {
+protected:
+    int pos;
+    Node<T> *next, *down;
+
+public:
+    NodeCabecera(int indice){
+        pos = indice;
+    };
 
     friend class Matrix<T>;
 };
