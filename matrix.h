@@ -25,8 +25,9 @@ private:
                     if(temp->posY == columnas){
                         return temp;
                     }
+                    if(temp->down)
                     temp = temp->down;
-                }while(temp->posY <= columnas);
+                }while(temp->posY <= columnas and temp->down != nullptr);
                 return nullptr;
             }
             return nullptr;
@@ -107,7 +108,7 @@ public:
             Node<T>* newNode = new Node<T>(data, filas, columnas);
             auto nodito = Encontrar(filas, columnas);
             if(nodito){
-                nodito->data = data;
+                    nodito->data = data;
             }else{
                 auto NodoAnteriorEnFila = FindAntesdeFilas(filas, columnas);
                 auto NodoAnterirEnColumna = FindAntesdeColumnas(filas, columnas);
@@ -168,9 +169,11 @@ public:
         Matrix<T> Matriz2(rows,columns);
         for (int i = 0; i < rows; ++i) {
             for (int j = 0; j < columns; ++j) {
-                auto value = (*this).operator()(i,j);
-                if(value != 0)
-                    Matriz2.set(i,j,value * scalar);
+                if(Encontrar(i,j)){
+                    auto value = (*this).operator()(i,j);
+                    if(value != 0)
+                        Matriz2.set(i,j,value * scalar);
+                }
             }
         }
         return Matriz2;
@@ -185,8 +188,13 @@ public:
                 for (int k = 0; k < other.columns; k++) {
                     T cont = 0;
                     for (int q = 0; q < columns; q++)
-                        cont += operator()(i, q) * other.operator()(q, k);
-                    Matriz2.set(i,k,cont);
+                        if(Encontrar(i, q))
+                            if(other.Encontrar(q,k)){
+                                cont += operator()(i, q) * other.operator()(q, k);
+                                Matriz2.set(i,k,cont);
+                            }
+
+
                 }
             }
             return Matriz2;
@@ -200,8 +208,12 @@ public:
 
         for (int i = 0; i < rows; ++i) {
             for (int k = 0; k < columns; ++k){
-                T suma =  this->operator()(i,k)+other.operator()(i,k);
-                Matriz2.set(i,k,suma);
+                if(Encontrar(i, k))
+                    if(other.Encontrar(i,k)){
+                        T suma =  this->operator()(i,k)+other.operator()(i,k);
+                        Matriz2.set(i,k,suma);
+                    }
+
             }
         }
         return Matriz2;
@@ -214,8 +226,11 @@ public:
 
         for (int i = 0; i < rows; ++i) {
             for (int k = 0; k < columns; ++k){
-                T suma =  this->operator()(i,k)-other.operator()(i,k);
-                Matriz2.set(i,k,suma);
+                if(Encontrar(i,k))
+                    if(other.Encontrar(i,k)){
+                        T suma =  this->operator()(i,k)-other.operator()(i,k);
+                        Matriz2.set(i,k,suma);
+                    }
             }
         }
         return Matriz2;

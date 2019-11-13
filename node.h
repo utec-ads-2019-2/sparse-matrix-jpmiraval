@@ -18,6 +18,10 @@ public:
         down = nullptr;
     };
 
+    ~Node(){
+        delete this;
+    }
+
     friend class Matrix<T>;
 };
 
@@ -27,6 +31,7 @@ protected:
     int pos;
     Node<T> *next, *down;
 
+
 public:
     NodeCabecera(int indice){
         pos = indice;
@@ -34,6 +39,7 @@ public:
     };
 
     friend class Matrix<T>;
+
 };
 
 #endif //SPARSE_MATRIX_NODE_H
