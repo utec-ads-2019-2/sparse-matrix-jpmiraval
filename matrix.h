@@ -178,14 +178,14 @@ public:
 
     Matrix<T> operator*(Matrix<T> other) const{
         Matrix<T> Matriz2(rows,other.columns);
-        if(other.Rows != columns )
+        if(other.rows != columns )
             throw out_of_range("Programa incapaz de multiplicar matrices de diferentes dimensiones uwu");
         else{
             for(int i=0; i<rows; i++) {
-                for (int k = 0; k < other.Columns; k++) {
+                for (int k = 0; k < other.columns; k++) {
                     T cont = 0;
-                    for (int q = 0; q < columns; q++)
-                        cont += operator()(i, q) * other.operator()(q, k);
+                    for (int k = 0; k < columns; k++)
+                        cont += operator()(i, k) * other.operator()(k, k);
                     Matriz2.set(i,k,cont);
                 }
             }
@@ -233,14 +233,16 @@ public:
 
     void print() {
         for(auto i=0;i<rows;i++){
-            for(auto y=0;y<columns;y++)
-                if(this->operator()(i,y))
-                cout<<this->operator()(i,y)<<" ";
+            for(auto k=0;k<columns;k++)
+                if(Encontrar(i,k)){
+                    cout<<this->operator()(i,k)<<" ";
+                }
+
             cout<<endl;
         }
     };
 
-    ~Matrix();
+    ~Matrix(){};
 };
 
 #endif //SPARSE_MATRIX_MATRIX_H
