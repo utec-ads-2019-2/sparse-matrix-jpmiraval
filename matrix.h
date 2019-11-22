@@ -104,6 +104,7 @@ public:
     };
 
     void set(unsigned filas, unsigned columnas, T data){
+        // Si data es 0?
         if(filas < rows && columnas < columns){
             Node<T>* newNode = new Node<T>(data, filas, columnas);
             auto nodito = Encontrar(filas, columnas);
@@ -165,6 +166,7 @@ public:
 
     }
 
+    // Utilizar los métodos de la matriz hace que las operaciones sean más lentas
     Matrix<T> operator*(T scalar) {
         Matrix<T> Matriz2(rows,columns);
         for (int i = 0; i < rows; ++i) {
@@ -257,6 +259,7 @@ public:
         }
     };
 
+    // Falta
     ~Matrix(){};
 };
 
